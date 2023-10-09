@@ -48,7 +48,7 @@ const listContacts = async () => {
         contacts.push(newContact);
 
         fs.writeFile(contactsPath, JSON.stringify(contacts));
-        return console.log(`contact with ID ${name} added successfully`.green);
+        return console.log(`contact with Name ${name} added successfully`.green);
 
 
     } catch (error) {
